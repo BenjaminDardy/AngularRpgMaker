@@ -4,7 +4,7 @@
 I was a fan of game made with rpgmaker and i wanted find a way to host multiple games online. 
 I used to develop app with Spring boot and Angular, so I decided to try to implement a solution with Angular and it worked.
 
-# If you want to use this project
+## If you want to use this project
 
 Free to you to use it. Don't forget to change the pom.xml. One big thing to change when adding a game
 it's to change some url values in the js files of the games. The url changes are marked with // TODO when changing game.
