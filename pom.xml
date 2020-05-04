@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>space.blueangel.game-player</groupId>
+  <artifactId>Client</artifactId>
+  <version>0.0.1</version>
+
+  <name>client</name>
+  <description>Client angular to play rpg maker game</description>
+
+  <build>
+    <finalName>client</finalName>
+
+    <plugins>
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <filesets>
+            <fileset>
+              <directory>dist</directory>
+              <followSymlinks>false</followSymlinks>
+            </fileset>
+          </filesets>
+        </configuration>
+      </plugin>
+
+      <!-- build -->
+      <plugin>
+        <artifactId>exec-maven-plugin</artifactId>
+        <groupId>org.codehaus.mojo</groupId>
+        <version>1.6.0</version>
+        <executions>
+          <!-- Build angular UI with Angular CLI -->
+          <execution>
+            <id>angular-cli build</id>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <phase>generate-resources</phase>
+            <configuration>
+              <executable>npm</executable>
+              <arguments>
+                <argument>run</argument>
+                <argument>build</argument>
+              </arguments>
+              <workingDirectory>${basedir}/src</workingDirectory>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <!-- Development profile -->
+    <profile>
+      <id>dev</id>
+    </profile>
+
+    <!-- Staging profile -->
+    <profile>
+      <id>test</id>
+    </profile>
+
+    <!-- Production profile -->
+    <profile>
+      <id>prod</id>
+    </profile>
+  </profiles>
+
+
+</project>
