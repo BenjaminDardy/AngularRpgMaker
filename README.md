@@ -1,4 +1,4 @@
-# GamePlayer
+# AngularRpgMaker
 ## Why this App
 
 I was a fan of game made with rpgmaker and i wanted find a way to host multiple games online. 
