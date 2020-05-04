@@ -1,6 +1,20 @@
 # GamePlayer
+## Why this App
+
+I was a fan of game made with rpgmaker and i wanted find a way to host multiple games online. 
+I used to develop app with Spring boot and Angular, so I decided to try to implement a solution with Angular and it worked.
+
+# If you want to use this project
+
+Free to you to use it. Don't forget to change the pom.xml. One big thing to change when adding a game
+it's to change some url values in the js files of the games. The url changes are marked with // TODO when changing game.
+When you want to add a game you have to create a folder in the assets directory that contains all the
+www folder of your game.
+
+# Project 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
+
 
 ## Development server
 
@@ -13,14 +27,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
